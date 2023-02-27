@@ -25,13 +25,14 @@ const ContentWrapper = styled.View``;
 
 const ButtonWrapper = styled.View`
   width: 72%;
+  gap: 12px;
 
   flex-direction: column;
 `;
 
 type Props = {};
 
-function Intro({}: Props): ReactElement {
+export default function Intro({}: Props): ReactElement {
   let timer: any;
 
   const {
@@ -75,27 +76,24 @@ function Intro({}: Props): ReactElement {
         <Button
           testID="btn-login"
           startElement={
-            <Image
-              source={IC_MASK}
+            <View
               style={{
                 position: 'absolute',
                 left: 12,
-                width: 24,
-                height: 24,
               }}
-            />
+            >
+              <Image source={IC_MASK} style={{width: 24, height: 24}} />
+            </View>
           }
           loading={isLoggingIn}
           onPress={() => onLogin()}
           text={getString('LOGIN')}
         />
-        <View style={{marginTop: 12}} />
         <Button
           testID="btn-navigate"
           onPress={() => router.push('/temp')}
           text={getString('NAVIGATE', {name: 'Temp'})}
         />
-        <View style={{marginTop: 12}} />
         <Button
           testID="btn-theme"
           onPress={(): void => changeThemeType()}
@@ -105,5 +103,3 @@ function Intro({}: Props): ReactElement {
     </Container>
   );
 }
-
-export default Intro;

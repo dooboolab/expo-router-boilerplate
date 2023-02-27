@@ -9,7 +9,7 @@ export default ({config}: ConfigContext): ExpoConfig => ({
   version: '1.0.0',
   orientation: 'default',
   icon: './assets/icon.png',
-  plugins: ['sentry-expo'],
+  plugins: ['sentry-expo', 'expo-localization'],
   splash: {
     image: './assets/splash.png',
     resizeMode: 'contain',
@@ -23,6 +23,7 @@ export default ({config}: ConfigContext): ExpoConfig => ({
   },
   assetBundlePatterns: ['**/*'],
   userInterfaceStyle: 'automatic',
+  scheme: 'doobooexporouter',
   ios: {
     supportsTablet: true,
     infoPlist: {
