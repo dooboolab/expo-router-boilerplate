@@ -23,7 +23,7 @@ export default ({config}: ConfigContext): ExpoConfig => ({
   },
   assetBundlePatterns: ['**/*'],
   userInterfaceStyle: 'automatic',
-  scheme: '',
+  scheme: 'doobooexporouter',
   ios: {
     supportsTablet: true,
     infoPlist: {
