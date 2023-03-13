@@ -13971,12 +13971,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"metro-resolver@npm:0.73.7":
-  version: 0.73.7
-  resolution: "metro-resolver@npm:0.73.7"
-  dependencies:
-    absolute-path: ^0.0.0
-  checksum: 97269385e4f6b4263e2af98409ecbbacec1637192c0fc4cac8165c5738079eec00b4724adf569c8a17d3624ec75dd8dee2d6ec6815ba54db1197c137b0094bf7
+"metro-resolver@npm:0.76.0":
+  version: 0.76.0
+  resolution: "metro-resolver@npm:0.76.0"
+  checksum: 3e26368ceca153024be622a195f5674b6457f201b9e3bd94faca5ef2098897df3fa8db8afc7ffd30958b7ab3b69cf8e0b1b58b2cc3fc1190e6dbb17d9622474d
   languageName: node
   linkType: hard
 
